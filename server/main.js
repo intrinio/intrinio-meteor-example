@@ -5,8 +5,6 @@ let username = "INTRINIO_API_USERNAME";
 let password = "INTRINIO_API_PASSWORD";
 let auth = username + ":" + password;
 
-console.log(auth)
-
 Meteor.startup(() => {
   HTTP.call('GET','https://api.intrinio.com/companies', {
     query: "ticker=AAPL",
